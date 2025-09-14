@@ -1,0 +1,253 @@
+/* -------------------------
+   Allgemeine Grundeinstellungen
+-------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px;
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("assets/background.jpg") no-repeat center center;
+  background-size: cover;
+  filter: blur(0px);
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+/* -------------------------
+   Texte & Links
+-------------------------- */
+p {
+  margin-bottom: 15px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------
+   Navigation
+-------------------------- */
+nav {
+  background: #333;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 15px;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+
+
+button:hover {
+  background: #004d99;
+}
+
+/* -------------------------
+   Container (Layout)
+-------------------------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* -------------------------
+   Footer
+-------------------------- */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
+
+/* -------------------------
+   Header
+-------------------------- */
+header {
+  border-radius: 60px;
+  position: relative;
+  width: 100%;
+  height: 190px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0 50px,
+    #f45e3b 50px 70px,
+    #ea8028 70px 90px,
+    #faae3e 90px 110px,
+    #9dab6e 110px 130px,
+    #89bea4 130px 150px,
+    #78b1bd 150px 170px,
+    #109793 170px 190px
+  );
+}
+
+.glass-button {
+  padding: 15px 40px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.glass-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Login-Box im Glas-Design */
+.login-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  width: 300px;
+  text-align: center;
+  color: white;
+  margin: 100px auto; /* zentriert */
+}
+
+/* Eingabefelder */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Platzhalter heller machen */
+.login-box input::placeholder {
+  color: #ddd;
+}
+
+.glass-button {
+
+  padding: 10px 40px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.glass-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.box-1 {									/* Box NR. 1 */
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px;
+  min-height: 100vh;
+  background: url('assets/background.jpg') no-repeat center center/cover;
+}
+
+.image-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
+  gap: 20px; /* Abstand zwischen den Bildern */
+  justify-items: center; /* zentriert die Buttons horizontal */
+  align-items: center;   /* zentriert die Buttons vertikal */
+}
+
+.image-form button {
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 10px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-form button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.image-form img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
